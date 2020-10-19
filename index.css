@@ -1,0 +1,157 @@
+body, html {
+    background-image: url('https://www.thebeertimes.com/wp-content/uploads/2019/06/Receta-de-hamburguesas-a-la-cerveza.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 430px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin: 40px;
+}
+.card_img{
+    width: 300px;
+}
+.card-img{
+    transform: scale(1);
+    width: 300px;
+    border-radius: 20px 20px 0 0 ;
+    transition: 250ms ease;
+}
+.card-img:hover{
+    transform: scale(1.01);
+}
+
+.card_body{
+    text-align: center;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2, h4{
+    margin: 10px 0;
+    padding: 0;
+}
+.line{
+    background-color:  rgba(39, 25, 25, 0.2);
+    width: 80%;
+    height: 1px;
+}
+
+.modificado{
+    margin: 10px;
+    background-color: rgb(39, 25, 25);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    height: 30px;
+    transition: 250ms ease;
+}
+.modificado:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 182, 91);
+}
+
+.modificado:active{
+    color: rgb(255, 255, 255);
+    background-color: rgb(13, 61, 23);
+}
+
+/* Navbar Styles */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(39, 25, 25);
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.brand{
+    width: 50px;
+    margin-left: 25px;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+.link{
+    margin: 0 25px;
+    height: 100%;
+}
+
+.link > a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease;
+}
+
+
+.link > a:hover {
+    color: rgb(66, 182, 91);
+}
+
+.link > a > i {
+    font-size: 20px;
+}
+
+/* Form Styles */
+
+.form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.form-control > input, .form-control > textarea {
+    border: none;
+    height: 25px;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(39, 25, 25);;
+    outline: none;
+    transition: 200ms ease;
+}
+
+.form-control > input:focus, .form-control > textarea:focus {
+    border-bottom: 2px solid rgb(66, 182, 91);
+}
+
+.form > button {
+    margin-top: 10px;
+    border: 0;
+    padding: 10px;
+    width: 100%;
+}
